@@ -1,0 +1,12 @@
+{
+  "name": "chorecore",
+  "version": "1.2.0",
+  "description": "Utilities to simplify many commonly used pieces of code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jacob Schwartz",
+  "license": "MIT"
+}
