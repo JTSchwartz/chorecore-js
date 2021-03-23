@@ -10,40 +10,40 @@ Conditional functions were created to simplify ternary operations when you only 
 
 This is often most useful in string interpolation, but is definitely not limited to this.
 
-### `isEqual(originalVal, testVal, returnVal, sameType = true, elseVal = '')`
+#### `isEqual(originalVal, testVal, returnVal, sameType = true, elseVal = '')`
 If the `originalVal` and `testVal` are equal, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 The `sameType` parameter determines whether to test type equality too. When `true` it will use `===`, when `false` it will use `==` 
 
-### `isFalse(testVal, returnVal, elseVal = '')`
+#### `isFalse(testVal, returnVal, elseVal = '')`
 If the `testVal` is `false`, the `returnVal` is returned, otherwise it will return `elseVal`.
 
-### `isNotEqual(originalVal, testVal, returnVal, sameType = true, elseVal = '')`
+#### `isNotEqual(originalVal, testVal, returnVal, sameType = true, elseVal = '')`
 If the `originalVal` and `testVal` are not equal, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 The `sameType` parameter determines whether to test type equality too. When `true` it will use `===`, when `false` it will use `==`
 
-### `isNotNull(testVal, returnVal, elseVal = '')`
+#### `isNotNull(testVal, returnVal, elseVal = '')`
 If the `testVal` is not `null`, the `returnVal` is returned, otherwise it will return `elseVal`.
 
-### `isNotUndefined(testVal, returnVal, elseVal = '')`
+#### `isNotUndefined(testVal, returnVal, elseVal = '')`
 If the `testVal` is not `undefined`, the `returnVal` is returned, otherwise it will return `elseVal`.
 
-### `isNull(testVal, returnVal, elseVal = '')`
+#### `isNull(testVal, returnVal, elseVal = '')`
 If the `testVal` is `null`, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 
-### `isTrue(testVal, returnVal, elseVal = '')`
+#### `isTrue(testVal, returnVal, elseVal = '')`
 If the `testVal` is `true`, the `returnVal` is returned, otherwise it will return `elseVal`.
 
-### `isUndefined(testVal, returnVal, elseVal = '')`
+#### `isUndefined(testVal, returnVal, elseVal = '')`
 If the `testVal` is `undefined`, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 ## Time
 
 ### Object
 
-### `time`
+#### `time`
 
 Contains all time constants in milliseconds (Units such as months and up are not included as they are not constant)
 
@@ -60,9 +60,9 @@ Contains all time constants in milliseconds (Units such as months and up are not
 
 All constants have an accompanying method that will simply return that unit in milliseconds multiplied by the argument you pass in.
 
-- ### `days(multiplier)`
-- ### `hours(multiplier)`
-- ### `milliseconds(multiplier)`
-- ### `minutes(multiplier)`
-- ### `seconds(multiplier)`
-- ### `weeks(multiplier)`
+- #### `days(multiplier)`
+- #### `hours(multiplier)`
+- #### `milliseconds(multiplier)`
+- #### `minutes(multiplier)`
+- #### `seconds(multiplier)`
+- #### `weeks(multiplier)`
