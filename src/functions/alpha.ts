@@ -1,22 +1,22 @@
-const alphabet = require("constants/alpha.json")
+const alphabet = require("src/constants/alpha.json")
 
 module.exports = {
-    lowercaseAt: (i) => {
+    lowercaseAt: (i: number) => {
         return alphabet.LOWERCASE[i]
     },
-    uppercaseAt: (i) => {
+    uppercaseAt: (i: number) => {
         return alphabet.UPPERCASE[i]
     },
-    lowercaseVowelAt: (i) => {
+    lowercaseVowelAt: (i: number) => {
         return alphabet.LOWERCASE_VOWELS[i]
     },
-    uppercaseVowelAt: (i) => {
+    uppercaseVowelAt: (i: number) => {
         return alphabet.UPPERCASE_VOWELS[i]
     },
-    lowercaseNonVowelAt: (i) => {
+    lowercaseNonVowelAt: (i: number) => {
         return alphabet.LOWERCASE_NON_VOWELS[i]
     },
-    uppercaseNonVowelAt: (i) => {
+    uppercaseNonVowelAt: (i: number) => {
         return alphabet.UPPERCASE_NON_VOWELS[i]
     },
 }
