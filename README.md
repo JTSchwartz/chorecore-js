@@ -21,7 +21,7 @@ If the `testVal` is `false`, the `returnVal` is returned, otherwise it will retu
 #### `isNotEqual(originalVal, testVal, returnVal, sameType = true, elseVal = '')`
 If the `originalVal` and `testVal` are not equal, the `returnVal` is returned, otherwise it will return `elseVal`.
 
-The `sameType` parameter determines whether to test type equality too. When `true` it will use `===`, when `false` it will use `==`
+The `sameType` parameter determines whether to test type equality too. When `true` it will use `!==`, when `false` it will use `!=`
 <br/><br/>
 #### `isNotNull(testVal, returnVal, elseVal = '')`
 If the `testVal` is not `null`, the `returnVal` is returned, otherwise it will return `elseVal`.
