@@ -80,6 +80,7 @@ web_modules/
 # Next.js build output
 .next
 out
+/lib
 
 # Nuxt.js build / generate output
 .nuxt
@@ -146,4 +147,3 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
-

@@ -34,46 +34,46 @@ Contains the alphabet in an abundance of variants in String form.
 | UPPERCASE_NON_VOWELS | "BCDFGHJKLMNPQRSTVWXZ"       |
 
 ### Methods
-All constants have an accompanying method that will simply return the character at the index passed to it.
+All constants have an accompanying method that will simply return the character at the index passed to it
 
-- #### `lowercaseAt(i)`
-- #### `uppercaseAt(i)`
-- #### `lowercaseVowelAt(i)`
-- #### `uppercaseVowelAt(i)`
-- #### `lowercaseNonVowelAt(i)`
-- #### `uppercaseNonVowelAt(i)`
+- #### `lowercaseAt(i: number): string`
+- #### `uppercaseAt(i: number): string`
+- #### `lowercaseVowelAt(i: number): string`
+- #### `uppercaseVowelAt(i: number): string`
+- #### `lowercaseNonVowelAt(i: number): string`
+- #### `uppercaseNonVowelAt(i: number): string`
 
 ## Conditionals
 Conditional functions were created to simplify ternary operations when you only want to define one condition.
 
 This is often most useful in string interpolation, but is definitely not limited to this.
 <br/><br/>
-#### `isEqual(originalVal, testVal, returnVal, sameType = true, elseVal = '')`
+#### `isEqual(originalVal: any, testVal: any, returnVal: any, sameType: boolean = true, elseVal: any = ''): any`
 If the `originalVal` and `testVal` are equal, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 The `sameType` parameter determines whether to test type equality too. When `true` it will use `===`, when `false` it will use `==`.
 <br/><br/>
-#### `isFalse(testVal, returnVal, elseVal = '')`
+#### `isFalse(testVal: any, returnVal: any, elseVal: any = ''): any`
 If the `testVal` is `false`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isNotEqual(originalVal, testVal, returnVal, sameType = true, elseVal = '')`
+#### `isNotEqual(originalVal: any, testVal: any, returnVal: any, sameType: boolean = true, elseVal: any = ''): any`
 If the `originalVal` and `testVal` are not equal, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 The `sameType` parameter determines whether to test type equality too. When `true` it will use `!==`, when `false` it will use `!=`.
 <br/><br/>
-#### `isNotNull(testVal, returnVal, elseVal = '')`
+#### `isNotNull(testVal: any, returnVal: any, elseVal: any = ''): any`
 If the `testVal` is not `null`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isNotUndefined(testVal, returnVal, elseVal = '')`
+#### `isNotUndefined(testVal: any, returnVal: any, elseVal: any = ''): any`
 If the `testVal` is not `undefined`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isNull(testVal, returnVal, elseVal = '')`
+#### `isNull(testVal: any, returnVal: any, elseVal: any = ''): any`
 If the `testVal` is `null`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isTrue(testVal, returnVal, elseVal = '')`
+#### `isTrue(testVal: any, returnVal: any, elseVal: any = ''): any`
 If the `testVal` is `true`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isUndefined(testVal, returnVal, elseVal = '')`
+#### `isUndefined(testVal: any, returnVal: any, elseVal: any = ''): any`
 If the `testVal` is `undefined`, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 ## Time
@@ -97,9 +97,9 @@ Contains all time constants in milliseconds (Units such as months and up are not
 
 All constants have an accompanying method that will simply return that unit in milliseconds multiplied by the argument you pass in.
 
-- #### `days(multiplier)`
-- #### `hours(multiplier)`
-- #### `milliseconds(multiplier)`
-- #### `minutes(multiplier)`
-- #### `seconds(multiplier)`
-- #### `weeks(multiplier)`
+- #### `days(multiplier: number): number`
+- #### `hours(multiplier: number): number`
+- #### `milliseconds(multiplier: number): number`
+- #### `minutes(multiplier: number): number`
+- #### `seconds(multiplier: number): number`
+- #### `weeks(multiplier: number): number`
