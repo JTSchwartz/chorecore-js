@@ -1,22 +1,22 @@
-const time = require("src/constants/time.json")
+import * as time from '../constants/time.json';
 
-module.exports = {
-    days: (multiplier: number) => {
+export const timeFunctions = {
+    days: (multiplier: number): number => {
         return multiplier * time.DAY
     },
-    hours: (multiplier: number) => {
+    hours: (multiplier: number): number => {
         return multiplier * time.HOUR
     },
-    milliseconds: (multiplier: number) => {
+    milliseconds: (multiplier: number): number => {
         return multiplier
     },
-    minutes: (multiplier: number) => {
+    minutes: (multiplier: number): number => {
         return multiplier * time.MINUTE
     },
-    seconds: (multiplier: number) => {
+    seconds: (multiplier: number): number => {
         return multiplier * time.SECOND
     },
-    weeks: (multiplier: number) => {
+    weeks: (multiplier: number): number => {
         return multiplier * time.WEEK
     }
 }

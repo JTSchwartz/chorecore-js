@@ -1,5 +1,5 @@
-module.exports = {
-	isEqual: (originalVal: any, testVal: any, returnVal: any, sameType = true, elseVal = '') => {
+export const conditionalFunctions = {
+	isEqual: (originalVal: any, testVal: any, returnVal: any, sameType = true, elseVal = ''): any => {
 		if (sameType) {
 			if (originalVal === testVal) {
 				return returnVal;
@@ -7,11 +7,11 @@ module.exports = {
 		}
 		return elseVal;
 	},
-	isFalse: (testVal: any, returnVal: any, elseVal: any = '') => {
+	isFalse: (testVal: any, returnVal: any, elseVal: any = ''): any => {
 		if (!testVal) return returnVal;
 		return elseVal;
 	},
-	isNotEqual: (originalVal: any, testVal: any, returnVal: any, sameType = true, elseVal: any = '') => {
+	isNotEqual: (originalVal: any, testVal: any, returnVal: any, sameType = true, elseVal: any = ''): any => {
 		if (sameType) {
 			if (originalVal !== testVal) {
 				return returnVal;
@@ -19,23 +19,23 @@ module.exports = {
 		}
 		return elseVal;
 	},
-	isNotNull: (testVal: any, returnVal: any, elseVal: any = '') => {
+	isNotNull: (testVal: any, returnVal: any, elseVal: any = ''): any => {
 		if (testVal !== null) return returnVal;
 		return elseVal;
 	},
-	isNotUndefined: (testVal: any, returnVal: any, elseVal: any = '') => {
+	isNotUndefined: (testVal: any, returnVal: any, elseVal: any = ''): any => {
 		if (testVal !== undefined) return returnVal;
 		return elseVal;
 	},
-	isNull: (testVal: any, returnVal: any, elseVal: any = '') => {
+	isNull: (testVal: any, returnVal: any, elseVal: any = ''): any => {
 		if (testVal === null) return returnVal;
 		return elseVal;
 	},
-	isTrue: (testVal: any, returnVal: any, elseVal: any = '') => {
+	isTrue: (testVal: any, returnVal: any, elseVal: any = ''): any => {
 		if (testVal) return returnVal;
 		return elseVal;
 	},
-	isUndefined: (testVal: any, returnVal: any, elseVal: any = '') => {
+	isUndefined: (testVal: any, returnVal: any, elseVal: any = ''): any => {
 		if (testVal === undefined) return returnVal
 		return elseVal
 	},

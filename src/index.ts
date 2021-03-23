@@ -1,11 +1,11 @@
 // Constants
-const timeConstants = require("src/constants/time.json")
-const alphaConstants = require("src/constants/alpha.json")
+import * as timeConstants from './constants/time.json';
+import * as alphaConstants from './constants/alpha.json';
 
 // Functions
-const alphaFunctions = require("src/functions/alpha")
-const conditionalFunctions = require("src/functions/conditionals")
-const timeFunctions = require("src/functions/time")
+import {alphaFunctions} from './functions/alpha';
+import {conditionalFunctions} from './functions/conditionals';
+import {timeFunctions} from './functions/time';
 
 module.exports = {
     ...alphaFunctions,

@@ -4,6 +4,8 @@
   "description": "Utilities to simplify many commonly used pieces of code",
   "main": "src/index.ts",
   "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +13,10 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^14.14.35",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.22.0",
     "typescript": "^4.2.3"
-  }
+  },
+  "files": ["dist/**/*"]
 }
