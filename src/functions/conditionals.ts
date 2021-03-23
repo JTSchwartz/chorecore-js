@@ -1,10 +1,8 @@
 export const conditionalFunctions = {
 	isEqual: (originalVal: any, testVal: any, returnVal: any, sameType = true, elseVal = ''): any => {
 		if (sameType) {
-			if (originalVal === testVal) {
-				return returnVal;
-			} else if (originalVal == testVal) return returnVal;
-		}
+			if (originalVal === testVal) return returnVal;
+		} else if (originalVal == testVal) return returnVal;
 		return elseVal;
 	},
 	isFalse: (testVal: any, returnVal: any, elseVal: any = ''): any => {
@@ -13,10 +11,8 @@ export const conditionalFunctions = {
 	},
 	isNotEqual: (originalVal: any, testVal: any, returnVal: any, sameType = true, elseVal: any = ''): any => {
 		if (sameType) {
-			if (originalVal !== testVal) {
-				return returnVal;
-			} else if (originalVal != testVal) return returnVal;
-		}
+			if (originalVal !== testVal) return returnVal;
+		} else if (originalVal != testVal) return returnVal;
 		return elseVal;
 	},
 	isNotNull: (testVal: any, returnVal: any, elseVal: any = ''): any => {
