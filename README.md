@@ -9,33 +9,32 @@
 Conditional functions were created to simplify ternary operations when you only want to define one condition
 
 This is often most useful in string interpolation, but is definitely not limited to this.
-
+<br/><br/>
 #### `isEqual(originalVal, testVal, returnVal, sameType = true, elseVal = '')`
 If the `originalVal` and `testVal` are equal, the `returnVal` is returned, otherwise it will return `elseVal`.
 
-The `sameType` parameter determines whether to test type equality too. When `true` it will use `===`, when `false` it will use `==` 
-
+The `sameType` parameter determines whether to test type equality too. When `true` it will use `===`, when `false` it will use `==`
+<br/><br/>
 #### `isFalse(testVal, returnVal, elseVal = '')`
 If the `testVal` is `false`, the `returnVal` is returned, otherwise it will return `elseVal`.
-
+<br/><br/>
 #### `isNotEqual(originalVal, testVal, returnVal, sameType = true, elseVal = '')`
 If the `originalVal` and `testVal` are not equal, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 The `sameType` parameter determines whether to test type equality too. When `true` it will use `===`, when `false` it will use `==`
-
+<br/><br/>
 #### `isNotNull(testVal, returnVal, elseVal = '')`
 If the `testVal` is not `null`, the `returnVal` is returned, otherwise it will return `elseVal`.
-
+<br/><br/>
 #### `isNotUndefined(testVal, returnVal, elseVal = '')`
 If the `testVal` is not `undefined`, the `returnVal` is returned, otherwise it will return `elseVal`.
-
+<br/><br/>
 #### `isNull(testVal, returnVal, elseVal = '')`
 If the `testVal` is `null`, the `returnVal` is returned, otherwise it will return `elseVal`.
-
-
+<br/><br/>
 #### `isTrue(testVal, returnVal, elseVal = '')`
 If the `testVal` is `true`, the `returnVal` is returned, otherwise it will return `elseVal`.
-
+<br/><br/>
 #### `isUndefined(testVal, returnVal, elseVal = '')`
 If the `testVal` is `undefined`, the `returnVal` is returned, otherwise it will return `elseVal`.
 
