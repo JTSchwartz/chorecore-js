@@ -48,6 +48,9 @@ Conditional functions were created to simplify ternary operations when you only 
 
 This is often most useful in string interpolation, but is definitely not limited to this.
 <br/><br/>
+#### `isEven(testVal: number, returnVal: any, elseVal: any = ''): any`
+If the `testVal` is even, the `returnVal` is returned, otherwise it will return `elseVal`.
+<br/><br/>
 #### `isEqual(originalVal: any, testVal: any, returnVal: any, sameType: boolean = true, elseVal: any = ''): any`
 If the `originalVal` and `testVal` are equal, the `returnVal` is returned, otherwise it will return `elseVal`.
 
@@ -70,11 +73,22 @@ If the `testVal` is not `undefined`, the `returnVal` is returned, otherwise it w
 #### `isNull(testVal: any, returnVal: any, elseVal: any = ''): any`
 If the `testVal` is `null`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
+#### `isOdd(testVal: number, returnVal: any, elseVal: any = ''): any`
+If the `testVal` is odd, the `returnVal` is returned, otherwise it will return `elseVal`.
+<br/><br/>
 #### `isTrue(testVal: any, returnVal: any, elseVal: any = ''): any`
 If the `testVal` is `true`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
 #### `isUndefined(testVal: any, returnVal: any, elseVal: any = ''): any`
 If the `testVal` is `undefined`, the `returnVal` is returned, otherwise it will return `elseVal`.
+
+## Strings
+
+#### `capitalize(alterVal: string): string`
+This method will return an altered version of the string provided which only ensures the first letter is capitalized
+<br/><br/>
+#### `sentenceCase(alterVal: string): string`
+This method will alter the provided string by capitalizing the first letter, and making all other letters lowercase.
 
 ## Time
 
