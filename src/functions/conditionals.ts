@@ -1,4 +1,8 @@
 export const conditionalFunctions = {
+	isEven: (testVal: number, returnVal: any, elseVal: any = ''): any => {
+		if (testVal % 2 === 0) return returnVal;
+		return elseVal;
+	},
 	isEqual: (originalVal: any, testVal: any, returnVal: any, sameType = true, elseVal = ''): any => {
 		if (sameType) {
 			if (originalVal === testVal) return returnVal;
@@ -25,6 +29,10 @@ export const conditionalFunctions = {
 	},
 	isNull: (testVal: any, returnVal: any, elseVal: any = ''): any => {
 		if (testVal === null) return returnVal;
+		return elseVal;
+	},
+	isOdd: (testVal: number, returnVal: any, elseVal: any = ''): any => {
+		if (testVal % 2 !== 0) return returnVal;
 		return elseVal;
 	},
 	isTrue: (testVal: any, returnVal: any, elseVal: any = ''): any => {
