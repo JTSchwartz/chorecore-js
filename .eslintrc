@@ -1,7 +1,6 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "format": "table",
   "plugins": [
 	"@typescript-eslint"
   ],
