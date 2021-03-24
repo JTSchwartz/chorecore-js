@@ -48,39 +48,53 @@ Conditional functions were created to simplify ternary operations when you only 
 
 This is often most useful in string interpolation, but is definitely not limited to this.
 <br/><br/>
-#### `isEven(testVal: number, returnVal: any, elseVal: any = ''): any`
+#### `isEven(testVal: number, returnVal: any, elseVal: any = ''): typeof elseVal`
 If the `testVal` is even, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isEqual(originalVal: any, testVal: any, returnVal: any, sameType: boolean = true, elseVal: any = ''): any`
+#### `isEqual(originalVal: any, testVal: any, returnVal: any, sameType: boolean = true, elseVal: any = ''): typeof elseVal`
 If the `originalVal` and `testVal` are equal, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 The `sameType` parameter determines whether to test type equality too. When `true` it will use `===`, when `false` it will use `==`.
 <br/><br/>
-#### `isFalse(testVal: any, returnVal: any, elseVal: any = ''): any`
+#### `isFalse(testVal: any, returnVal: any, elseVal: any = ''): typeof elseVal`
 If the `testVal` is `false`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isNotEqual(originalVal: any, testVal: any, returnVal: any, sameType: boolean = true, elseVal: any = ''): any`
+#### `isNotEqual(originalVal: any, testVal: any, returnVal: any, sameType: boolean = true, elseVal: any = ''): typeof elseVal`
 If the `originalVal` and `testVal` are not equal, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 The `sameType` parameter determines whether to test type equality too. When `true` it will use `!==`, when `false` it will use `!=`.
 <br/><br/>
-#### `isNotNull(testVal: any, returnVal: any, elseVal: any = ''): any`
+#### `isNotNull(testVal: any, returnVal: any, elseVal: any = ''): typeof elseVal`
 If the `testVal` is not `null`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isNotUndefined(testVal: any, returnVal: any, elseVal: any = ''): any`
+#### `isNotUndefined(testVal: any, returnVal: any, elseVal: any = ''): typeof elseVal`
 If the `testVal` is not `undefined`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isNull(testVal: any, returnVal: any, elseVal: any = ''): any`
+#### `isNull(testVal: any, returnVal: any, elseVal: any = ''): typeof elseVal`
 If the `testVal` is `null`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isOdd(testVal: number, returnVal: any, elseVal: any = ''): any`
+#### `isOdd(testVal: number, returnVal: any, elseVal: any = ''): typeof elseVal`
 If the `testVal` is odd, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isTrue(testVal: any, returnVal: any, elseVal: any = ''): any`
+#### `isTrue(testVal: any, returnVal: any, elseVal: any = ''): typeof elseVal`
 If the `testVal` is `true`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isUndefined(testVal: any, returnVal: any, elseVal: any = ''): any`
+#### `isUndefined(testVal: any, returnVal: any, elseVal: any = ''): typeof elseVal`
 If the `testVal` is `undefined`, the `returnVal` is returned, otherwise it will return `elseVal`.
+
+## Math
+
+#### `closest(needle: number, arr: number[]): number`
+This method will return the closest value in the array to the needle
+
+Example:
+```typescript
+closest(8, [1, 7, 3, 10, 5]) 
+// returns 7
+```
+&nbsp;
+#### `parseFractionString(fraction: string): number`
+This method parses a function written in out in a string and returns the number as a decimal
 
 ## Strings
 
@@ -117,3 +131,38 @@ All constants have an accompanying method that will simply return that unit in m
 - #### `minutes(multiplier: number): number`
 - #### `seconds(multiplier: number): number`
 - #### `weeks(multiplier: number): number`
+
+## Symbols
+
+### Object
+
+#### `fraction`
+Contains all Unicode fraction symbols
+
+| Name           | Value |
+|----------------|-------|
+| ONE_HALF       | ½     |
+| ONE_THIRD      | ⅓     |
+| ONE_QUARTER    | ¼     |
+| ONE_FIFTH      | ⅕     |
+| ONE_SIXTH      | ⅙     |
+| ONE_SEVENTH    | ⅐     |
+| ONE_EIGHTH     | ⅛     |
+| ONE_NINTH      | ⅑     |
+| ONE_TENTH      | ⅒    |
+| TWO_THIRDS     | ⅔     |
+| TWO_FIFTHS     | ⅖     |
+| THREE_QUARTERS | ¾     |
+| THREE_FIFTHS   | ⅗     |
+| THREE_EIGHTHS  | ⅜     |
+| FOUR_FIFTHS    | ⅘     |
+| FIVE_SIXTHS    | ⅚     |
+| FIVE_EIGHTHS   | ⅝     |
+| SEVEN_EIGHTHS  | ⅞     |
+
+### Method
+
+#### `fractionToSymbol(originalVal: number | string): string`
+This method accepts a fraction (either as a number or a string) and returns the closest value from the list of symbols above
+
+Throws an error if the provided value is less than or equal to  -1, or greater than or equal to 1

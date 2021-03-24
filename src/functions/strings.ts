@@ -4,5 +4,5 @@ export const stringFunctions = {
 	},
 	sentenceCase: (alterVal: string): string => {
 		return alterVal && alterVal.charAt(0).toUpperCase() + alterVal.slice(1).toLowerCase()
-	},
+	}
 }
