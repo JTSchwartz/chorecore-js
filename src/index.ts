@@ -5,11 +5,13 @@ import * as alphaConstants from './constants/alpha.json';
 // Functions
 import {alphaFunctions} from './functions/alpha';
 import {conditionalFunctions} from './functions/conditionals';
+import {stringFunctions} from './functions/strings';
 import {timeFunctions} from './functions/time';
 
 module.exports = {
     ...alphaFunctions,
     ...conditionalFunctions,
+    ...stringFunctions,
     ...timeFunctions,
     alphabet: {
         ...alphaConstants,
