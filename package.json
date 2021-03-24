@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/JTSchwartz/chorecore-js.git"
   },
-  "keywords": [],
+  "keywords": ["chorecore", "chore", "core", "utilities", "simplify"],
   "author": "Jacob Schwartz",
   "license": "ISC",
   "bugs": {
