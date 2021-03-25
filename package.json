@@ -12,8 +12,7 @@
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "test": "jest --config jestconfig.json",
-    "version": "git add -A src",
-    "semantic-release": "semantic-release"
+    "version": "git add -A src"
   },
   "repository": {
     "type": "git",
