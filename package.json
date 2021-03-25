@@ -1,6 +1,6 @@
 {
   "name": "chorecore",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Utilities to simplify many commonly used pieces of code",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
