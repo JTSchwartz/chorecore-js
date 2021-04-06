@@ -8,7 +8,7 @@ export const stringFunctions = {
 	},
 	replaceAll: replaceAll,
 	replacementMap: (str: string, map: {[key: string]: string}): string => {
-		for (let key of Object.keys(map)) replaceAll(str, key, map[key])
+		for (const key of Object.keys(map)) str = replaceAll(str, key, map[key])
 		return str
 	},
 	sentenceCase: (alterVal: string): string => {
