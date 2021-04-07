@@ -48,38 +48,50 @@ Conditional functions were created to simplify ternary operations when you only 
 
 This is often most useful in string interpolation, but is definitely not limited to this.
 <br/><br/>
-#### `isEven(testVal: number, returnVal: any, elseVal: any = ''): typeof elseVal`
+#### `isEven(testVal: number, returnVal: any = testVal, elseVal: any = ''): any`
 If the `testVal` is even, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isEqual(originalVal: any, testVal: any, returnVal: any, sameType: boolean = true, elseVal: any = ''): typeof elseVal`
+#### `isEqual(originalVal: any, testVal: any, returnVal: any = originalVal, sameType: boolean = true, elseVal: any = ''): any`
 If the `originalVal` and `testVal` are equal, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 The `sameType` parameter determines whether to test type equality too. When `true` it will use `===`, when `false` it will use `==`.
 <br/><br/>
-#### `isFalse(testVal: any, returnVal: any, elseVal: any = ''): typeof elseVal`
+#### `isFalse(testVal: any, returnVal: any = testVal, elseVal: any = ''): any`
 If the `testVal` is `false`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isNotEqual(originalVal: any, testVal: any, returnVal: any, sameType: boolean = true, elseVal: any = ''): typeof elseVal`
+#### `isGT: (originalVal: any, testVal: any, returnVal: any = originalVal, elseVal = ''): any`
+If the `originalVal` is greater than the `testVal`, the `returnVal` is returned, otherwise it will return `elseVal`.
+<br/><br/>
+#### `isGTE: (originalVal: any, testVal: any, returnVal: any = originalVal, elseVal = ''): any`
+If the `originalVal` is greater than or equal to the `testVal`, the `returnVal` is returned, otherwise it will return `elseVal`.
+<br/><br/>
+#### `isLT: (originalVal: any, testVal: any, returnVal: any = originalVal, elseVal = ''): any`
+If the `originalVal` is less than the `testVal`, the `returnVal` is returned, otherwise it will return `elseVal`.
+<br/><br/>
+#### `isLTE: (originalVal: any, testVal: any, returnVal: any = originalVal, elseVal = ''): any`
+If the `originalVal` is less than or equal to the `testVal`, the `returnVal` is returned, otherwise it will return `elseVal`.
+<br/><br/>
+#### `isNotEqual(originalVal: any, testVal: any, returnVal: any = originalVal, sameType: boolean = true, elseVal: any = ''): any`
 If the `originalVal` and `testVal` are not equal, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 The `sameType` parameter determines whether to test type equality too. When `true` it will use `!==`, when `false` it will use `!=`.
 <br/><br/>
-#### `isNotNull(testVal: any, returnVal: any, elseVal: any = ''): typeof elseVal`
+#### `isNotNull(testVal: any, returnVal: any = testVal, elseVal: any = ''): any`
 If the `testVal` is not `null`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isNotUndefined(testVal: any, returnVal: any, elseVal: any = ''): typeof elseVal`
+#### `isNotUndefined(testVal: any, returnVal: any = testVal, elseVal: any = ''): any`
 If the `testVal` is not `undefined`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isNull(testVal: any, returnVal: any, elseVal: any = ''): typeof elseVal`
+#### `isNull(testVal: any, returnVal: any = testVal, elseVal: any = ''): any`
 If the `testVal` is `null`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isOdd(testVal: number, returnVal: any, elseVal: any = ''): typeof elseVal`
+#### `isOdd(testVal: number, returnVal: any = testVal, elseVal: any = ''): any`
 If the `testVal` is odd, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isTrue(testVal: any, returnVal: any, elseVal: any = ''): typeof elseVal`
+#### `isTrue(testVal: any, returnVal: any = testVal, elseVal: any = ''): any`
 If the `testVal` is `true`, the `returnVal` is returned, otherwise it will return `elseVal`.
 <br/><br/>
-#### `isUndefined(testVal: any, returnVal: any, elseVal: any = ''): typeof elseVal`
+#### `isUndefined(testVal: any, returnVal: any = testVal, elseVal: any = ''): any`
 If the `testVal` is `undefined`, the `returnVal` is returned, otherwise it will return `elseVal`.
 
 ## Math

@@ -17,6 +17,30 @@ test("isEqual", () => {
 	expect(conditionalFunctions.isEqual(0, "1", Constant.CORRECT, false, Constant.INCORRECT)).toBe(Constant.INCORRECT)
 })
 
+test("isGT", () => {
+	expect(conditionalFunctions.isGT(1, 0, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.CORRECT)
+	expect(conditionalFunctions.isGT(1, 1, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.INCORRECT)
+	expect(conditionalFunctions.isGT(0, 1, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.INCORRECT)
+})
+
+test("isGTE", () => {
+	expect(conditionalFunctions.isGTE(1, 0, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.CORRECT)
+	expect(conditionalFunctions.isGTE(1, 1, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.CORRECT)
+	expect(conditionalFunctions.isGTE(0, 1, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.INCORRECT)
+})
+
+test("isLT", () => {
+	expect(conditionalFunctions.isLT(0, 1, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.CORRECT)
+	expect(conditionalFunctions.isLT(1, 1, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.INCORRECT)
+	expect(conditionalFunctions.isLT(1, 0, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.INCORRECT)
+})
+
+test("isLTE", () => {
+	expect(conditionalFunctions.isLTE(0, 1, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.CORRECT)
+	expect(conditionalFunctions.isLTE(1, 1, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.CORRECT)
+	expect(conditionalFunctions.isLTE(1, 0, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.INCORRECT)
+})
+
 test("isFalse", () => {
 	expect(conditionalFunctions.isFalse(false, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.CORRECT)
 	expect(conditionalFunctions.isFalse(true, Constant.CORRECT, Constant.INCORRECT)).toBe(Constant.INCORRECT)
