@@ -5,6 +5,8 @@
 ![Code Size](https://img.shields.io/github/languages/code-size/jtschwartz/chorecore-js)
 ![GitHub Issues](https://img.shields.io/github/issues/jtschwartz/chorecore)
 
+<hr/>
+
 ## Alphabet
 
 ### Objects
@@ -42,6 +44,8 @@ All constants have an accompanying method that will simply return the character 
 - #### `uppercaseVowelAt(i: number): string`
 - #### `lowercaseNonVowelAt(i: number): string`
 - #### `uppercaseNonVowelAt(i: number): string`
+
+<hr/>
 
 ## Conditionals
 Conditional functions were created to simplify ternary operations when you only want to define one condition.
@@ -94,6 +98,8 @@ If the `testVal` is `true`, the `returnVal` is returned, otherwise it will retur
 #### `isUndefined(testVal: any, returnVal: any = testVal, elseVal: any = ''): any`
 If the `testVal` is `undefined`, the `returnVal` is returned, otherwise it will return `elseVal`.
 
+<hr/>
+
 ## Math
 
 #### `closest(needle: number, arr: number[]): number`
@@ -108,6 +114,8 @@ closest(8, [1, 7, 3, 10, 5])
 #### `parseFractionString(fraction: string): number`
 This method parses a function written in out in a string and returns the number as a decimal
 
+<hr/>
+
 ## Strings
 
 #### `capitalize(alterVal: string): string`
@@ -115,6 +123,8 @@ This method will return an altered version of the string provided which only ens
 <br/><br/>
 #### `sentenceCase(alterVal: string): string`
 This method will alter the provided string by capitalizing the first letter, and making all other letters lowercase.
+
+<hr/>
 
 ## Time
 
@@ -143,6 +153,8 @@ All constants have an accompanying method that will simply return that unit in m
 - #### `minutes(multiplier: number): number`
 - #### `seconds(multiplier: number): number`
 - #### `weeks(multiplier: number): number`
+
+<hr/>
 
 ## Symbols
 
